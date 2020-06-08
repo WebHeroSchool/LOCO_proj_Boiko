@@ -1,4 +1,312 @@
-body {
-  font-family: Montserrat, sans-serif;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0 auto;
+  width: 1440px;
+  padding: 0;
+}
+
+.header,
+.collection {
+  background: linear-gradient(to right, black 32%, white 10%);
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  font-size: 0;
+  height: 92px;
+  width: 100%;
+}
+
+.header__logo {
+  display: flex;
+  height: 92px;
+  margin-right: 90px;
+  padding: 36px 52px 19px 52px;
+  width: 202px;
+}
+
+.language {
+  display: flex;
+  height: 92px;
+  padding: 46px 108px 55px 97px;
+  width: 259px;
+}
+
+.language__img {
+  height: 25px;
+  width: 31px;
+}
+
+.language__arrow {
+  height: 8px;
+  margin: 10px;
+  width: 16px;
+}
+
+.header-menu {
+  background-color: #f2f2f2;
+  height: 92px;
+  margin-left: 1348px;
+  position: absolute;
+  top: 0;
+  width: 92px;
+}
+
+.header-menu__line::before {
+  content: '';
+  transform: translateY(-11px);
+}
+
+.header-menu__line, 
+.header-menu__line::before {
+  background: #000;
+  display: block;
+  height: 4px;
+  left: 50%;
+  margin-left:-18px;
+  position: absolute;
+  top: 53%;
+  width: 36.5px;
+}
+
+.collection {
+  font-size: 0;
+  padding-top: 77px;
+  position: relative;
+  width: 100%;
+}
+
+.collection__img {
+  display: inline-block;
+  float: left;
+  height: 562px;
+  position: relative;
+  width: 549px;
+  margin-left: 186px;
+  margin-right: 53px;
+}
+
+.collection__title {
+  display: inline-block;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: bold;
+  height: 164px;
+  line-height: 82px;
+  margin-bottom: 3px;
+  margin-top: 102px;
+  position: relative;
+  width: 475px;
+}
+
+.collection__description {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  height: 127px;
+  margin-bottom: 37px; 
+  position: relative;
+  width: 467px;
+}
+
+.collection__btn {
+  background-color: #fff;
+  border: 1.5px solid #000;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  display: inline-block;
+  height: 44px;
+  margin-right: 53px;
+  position: relative;
+  text-transform: uppercase;
+  transform: translateX(-1px);
+  width: 203px;
+}
+
+.range {
+  display: inline-block;
+  position: relative;
+}
+
+.range__link {
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 17px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 172px;
+}
+
+.rangle__link-arrow {
+  display: inline-block;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: space-between;
+  height: 43px;
+  margin-left: 52px;
+  margin-top: 155px;
+  padding: 0;
+  width: 160px;
+ }
+
+.socials__item-pic {
+  height: 43px;
+  margin-right: 8px;
+  width: 43px;
+}
+
+.scroll {
+  display: flex;
+  height: 46px;
+  margin-bottom: 18px;
+  margin-left: 707px;
+  transform: translateY(-42px);
+  width: 27px;
+}
+
+.scroll__btn {
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.scroll__wheel { 
+  background: #000;
+  border-radius: 19px;
+  height: 8px;
+  display: inline-block;
+  margin-top: 10px;
+  width: 3px;
+  transform: translateX(-15px);
+  z-index: 2;
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
+
+  * {
+  	box-sizing: border-box;
+  }
+
+  html,
+  body {
+  	margin: 0 auto;
+  	max-width: 480px;
+  	min-width: 375px;
+  	overflow-x: hidden;
+  	width: 100%;
+  }
+
+  .header,
+  .collection {
+    background: none;
+    font-size: 0;  
+    margin: 0;
+    width: 100%;
+  }
+
+  .header {
+    background-color: #fff;
+    display: flex;
+    font-size: 0;
+    height: 69px;
+    justify-content: flex-start;  
+ }
+
+  .header__logo {
+    background-image: url('./images/LOCO.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fixed;
+  	display: flex;
+    height: 37px;
+    margin-left: 23px;
+    transform: translateY(-2px);
+    width: 98px;
+  }
+
+  .header-menu {
+  	background-color: #ededed;
+  	height: 69px;
+  	margin: 0;
+  	right: 0;
+  	width: 70px;
+  }
+
+  .header-menu__line::before {
+    content: '';
+    transform: translateY(-9px);
+  }
+
+  .header-menu__line,
+  .header-menu__line::before {
+  	display: block;
+  	height: 3px;
+  	left: 50%;
+    margin-left: -14px;
+    top: 52%;
+  	width: 27px;
+  }
+
+  .language,
+  .collection__img,
+  .collection__description,
+  .collection__btn,
+  .range,
+  .socials-list,
+  .scroll {
+  	display: none;
+  }
+
+  .collection {
+    background-image: url('./images/pete-bellis-432867-unsplash-mob.png');
+    background-position: center bottom;
+    background-size: cover;
+    min-height: 529px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .collection__title {
+  	display: inline-block;
+  	font-size: 50px;
+    font-style: normal;
+    font-weight: bold;
+  	height: 103px;
+  	line-height: 51px;
+  	margin: 287px 0 35px 27px;
+  	width: 297px;
+  }
+
+  .collection__title::after {
+    content: "";
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-right: 3px solid #000;
+    border-top: 3px solid #000;
+    transform: rotate(135deg);
+    margin-left: 153px;
+    margin-top: 12px;
+  }
+}
+
+ 
