@@ -206,7 +206,7 @@ body {
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   * {
-  	box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   html,
@@ -222,7 +222,7 @@ body {
     cursor: pointer;
     display: flex;
     height: 92px;
-    margin-right: 150px; 
+    margin-right: 150px;
     width: 170px;
   }
 
@@ -269,8 +269,8 @@ body {
   }
 
   .collection__img {
-  	float: left;
-  	height: 40%;
+    float: left;
+    height: 40%;
     margin-right: 40px;
     width: 35%;
   }
@@ -421,7 +421,6 @@ body {
     transform: rotate(135deg);
   }
 }
-
 
 @media (min-width: 375px) and (max-width: 580px) {
   * {
