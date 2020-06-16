@@ -322,21 +322,18 @@ body {
 }
 
 @media (max-width: 880px) {
-  .collection__img {
-  	height: 35%;
-  	width: 35%;
-  }
-
   .collection {
-  	padding-right: 11vw;
+    padding-right: 11vw;
   }
 
   .collection__img {
+    height: 35%;
+    width: 35%;
     margin-bottom: 7vw;
-}
+  }
 
   .collection__title {
-  	margin-top: 7vw;
+    margin-top: 7vw;
   }
 
   .collection__description {
@@ -346,8 +343,8 @@ body {
   }
 
   .collection__btn {
-  	font-size: 12px;
-  	margin-right: 4vw;
+    font-size: 12px;
+    margin-right: 4vw;
   }
 
   .range__link {
@@ -370,9 +367,9 @@ body {
   }
 
   .main-page {
-  	background: none;
-  	padding: 0;
-  	margin: 0;
+    background: none;
+    padding: 0;
+    margin: 0;
   }
 
   .header,
@@ -444,7 +441,7 @@ body {
   }
 
   .collection-content {
-  	width: 100%;
+    width: 100%;
   }
 
   .collection__title {
@@ -621,3 +618,5 @@ body {
     transform: rotate(135deg);
   }
 }
+
+
