@@ -1,4 +1,621 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Montserrat, sans-serif;
+  margin: 0 auto;
+  width: 1440px;
+  padding: 0;
+}
+
+.main-page {
+  background: linear-gradient(to right, black 32%, white 10%);
+  padding-bottom: 27px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  font-size: 0;
+  height: 92px;
+  width: 100%;
+}
+
+.header__logo {
+  cursor: pointer;
+  display: flex;
+  height: 92px;
+  margin-right: 90px;
+  padding: 36px 52px 19px 52px;
+  width: 202px;
+}
+
+.language {
+  cursor: pointer;
+  display: flex;
+  height: 92px;
+  padding: 46px 108px 55px 97px;
+  width: 259px;
+}
+
+.language__img {
+  height: 25px;
+  width: 31px;
+}
+
+.language__arrow {
+  height: 8px;
+  margin: 10px;
+  width: 16px;
+}
+
+.header-menu {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  height: 92px;
+  margin-left: 1348px;
+  position: absolute;
+  top: 0;
+  width: 92px;
+}
+
+.header-menu__line::before {
+  content: '';
+  transform: translateY(-11px);
+}
+
+.header-menu__line,
+.header-menu__line::before {
+  background: #000;
+  display: block;
+  height: 4px;
+  left: 50%;
+  margin-left: -18px;
+  position: absolute;
+  top: 53%;
+  width: 36.5px;
+}
+
+.collection {
+  display: flex;
+  padding-left: 186px;
+  padding-right: 120px;
+  padding-top: 77px;
+  width: 100%;
+}
+
+.collection__img {
+  height: 562px;
+  margin-bottom: 68px;
+  margin-right: 55px;
+}
+
+.collection-content {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.collection__title {
+  display: flex;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 82px;
+  margin-bottom: 17px;
+  margin-top: 102px;
+}
+
+.collection__description {
+  display: flex;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  margin-bottom: 38px;
+  margin-right: 64px;
+}
+
+.collection__btn {
+  background-color: #fff;
+  border: 1.5px solid #000;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  height: 44px;
+  margin-right: 46px;
+  text-transform: uppercase;
+  transform: translateX(-3px);
+  width: 203px;
+}
+
+.range {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.range__link {
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.rangle__link-arrow {
+  display: inline-block;
+}
+
+.tools {
+  display: flex;
+  width: 100%;
+}
+
+.socials-list {
+  cursor: pointer;
+  display: flex;
+  height: 43px;
+  list-style-type: none;
+  padding-left: 52px;
+  width: 33%;
+}
+
+.socials__item-pic {
+  height: 43px;
+  margin-right: 12px;
+  width: 43px;
+}
+
+.scroll {
+  align-items: center;
+  display: flex;
+  height: 46px;
+  justify-content: center;
+  margin-top: 16px;
+  width: 33%;
+}
+
+.scroll__btn {
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  transform: translateX(10px);
+  z-index: 1;
+}
+
+.scroll__wheel {
+  background: #000;
+  border-radius: 19px;
+  height: 8px;
+  margin-bottom: 15px;
+  transform: translateX(-5px);
+  width: 3px;
+  z-index: 2;
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0 auto;
+    max-width: 1280px;
+    min-width: 1024px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .header__logo {
+    cursor: pointer;
+    display: flex;
+    height: 92px;
+    margin-right: 10vw;
+    width: 170px;
+  }
+
+  .language {
+    cursor: pointer;
+    display: flex;
+    height: 21px;
+    margin-bottom: 0;
+    margin-top: 18px;
+    padding: 0;
+    width: 50px;
+  }
+
+  .language__img {
+    height: 21px;
+    width: 24px;
+  }
+
+  .language__arrow {
+    height: 8px;
+    margin: 7px;
+    width: 12px;
+  }
+
+  .header-menu {
+    right: 0;
+  }
+
+  .collection {
+    padding-left: 9vw;
+    padding-right: 9vw;
+    padding-top: 50px;
+  }
+
+  .collection__img {
+    margin-right: 4vw;
+    height: 45%;
+    width: 40%;
+  }
+
+  .collection__title {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 72px;
+    margin-top: 60px;
+  }
+
+  .collection__description {
+    margin-bottom: 2.5vw;
+  }
+
+  .collection__btn {
+    font-size: 12px;
+    margin-right: 3vw;
+  }
+
+  .range__link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__logo {
+    margin-right: 7vw;
+  }
+
+  .language {
+    display: none;
+  }
+
+  .collection {
+    padding-top: 45px;
+  }
+
+  .collection__title {
+    font-size: 42px;
+    line-height: 43px;
+    margin-bottom: 2vw;
+    margin-top: 20px;
+  }
+
+  .collection__description {
+    font-size: 13px;
+    line-height: 26px;
+    margin-bottom: 2vw;
+  }
+
+  .collection__btn {
+    font-size: 11px;
+    margin-right: 2.5vw;
+  }
+
+  .range__link {
+    color: #000;
+    font-size: 11px;
+    margin-right: 1vw;
+  }
+
+  .scroll {
+    display: none;
+  }
+}
+
+@media (max-width: 880px) {
+  .collection {
+    padding-right: 11vw;
+  }
+
+  .collection__img {
+    height: 35%;
+    width: 35%;
+    margin-bottom: 7vw;
+  }
+
+  .collection__title {
+    margin-top: 7vw;
+  }
+
+  .collection__description {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 3vw;
+  }
+
+  .collection__btn {
+    font-size: 12px;
+    margin-right: 4vw;
+  }
+
+  .range__link {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0 auto;
+    max-width: 767px;
+    min-width: 568px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .main-page {
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header,
+  .collection {
+    width: 100%;
+  }
+
+  .header {
+    background-color: #fff;
+    display: flex;
+    font-size: 0;
+    height: 69px;
+    justify-content: flex-start;
+  }
+
+  .header__logo {
+    background-image: url('./images/LOCO.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fixed;
+    display: flex;
+    height: 40px;
+    margin-left: 26px;
+    transform: translateY(-2px);
+    width: 98px;
+  }
+
+  .header-menu {
+    background-color: #ededed;
+    height: 69px;
+    margin: 0;
+    right: 0;
+    width: 70px;
+  }
+
+  .header-menu__line::before {
+    content: '';
+    transform: translateY(-9px);
+  }
+
+  .header-menu__line,
+  .header-menu__line::before {
+    display: block;
+    height: 3px;
+    left: 50%;
+    margin-left: -14px;
+    top: 52%;
+    width: 27px;
+  }
+
+  .language,
+  .collection__img,
+  .collection__description,
+  .collection__btn,
+  .range,
+  .socials-list,
+  .scroll {
+    display: none;
+  }
+
+  .collection {
+    background-image: url('./images/pete-bellis-432867-unsplash-mob.png');
+    background-position: center center;
+    background-size: cover;
+    height: 870px;
+    object-fit: cover;
+    padding: 0;
+    width: 100%;
+  }
+
+  .collection-content {
+    width: 100%;
+  }
+
+  .collection__title {
+    font-size: 54px;
+    line-height: 56px;
+    margin-left: 5vw;
+    margin-top: 670px;
+    text-align: center;
+  }
+
+  .collection__title::after {
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-right: 5px solid #000;
+    border-top: 5px solid #000;
+    margin-left: 40%;
+    margin-top: 9%;
+    transform: rotate(135deg);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0 auto;
+    max-width: 567px;
+    min-width: 320px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .main-page {
+    background: none;
+    padding: 0;
+  }
+
+  .header,
+  .collection {
+    margin: 0;
+    width: 100%;
+  }
+
+  .header {
+    background-color: #fff;
+    display: flex;
+    font-size: 0;
+    height: 69px;
+    justify-content: flex-start;
+  }
+
+  .header__logo {
+    background-image: url('./images/LOCO.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: fixed;
+    display: flex;
+    height: 37px;
+    margin-left: 23px;
+    transform: translateY(-2px);
+    width: 98px;
+  }
+
+  .header-menu {
+    background-color: #ededed;
+    height: 69px;
+    margin: 0;
+    right: 0;
+    width: 70px;
+  }
+
+  .header-menu__line::before {
+    content: '';
+    transform: translateY(-9px);
+  }
+
+  .header-menu__line,
+  .header-menu__line::before {
+    display: block;
+    height: 3px;
+    left: 50%;
+    margin-left: -14px;
+    top: 52%;
+    width: 27px;
+  }
+
+  .language,
+  .collection__img,
+  .collection__description,
+  .collection__btn,
+  .range,
+  .socials-list,
+  .scroll {
+    display: none;
+  }
+
+  .collection {
+    background-image: url('./images/pete-bellis-432867-unsplash-mob.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin: 0;
+    min-height: 529px;
+    object-fit: cover;
+    padding: 0;
+    width: 100%;
+  }
+
+  .collection-content {
+    width: 100%;
+  }
+
+  .collection__title {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 51px;
+    margin-left: 28px;
+    margin-top: 364px;
+  }
+
+  .collection__title::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-right: 3px solid #000;
+    border-top: 3px solid #000;
+    margin-left: 40%;
+    margin-top: 116px;
+    transform: rotate(135deg);
+  }
+}
+
+@media (max-width: 320px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0 auto;
+    max-width: 320px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .collection {
+    background-position: center top;
+  }
+
+  .collection__title {
+    font-size: 40px;
+    line-height: 42px;
+    margin-top: 365px;
+    margin-right: 70px;
+  }
+
+  .collection__title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-right: 3px solid #000;
+    border-top: 3px solid #000;
+    margin-left: 40%;
+    margin-top: 27%;
+    transform: rotate(135deg);
+  }
 }
 
