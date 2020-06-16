@@ -465,7 +465,7 @@ body {
   }
 }
 
-@media (min-width: 320px) and (max-width: 540px) {
+@media (min-width: 320px) and (max-width: 567px) {
   * {
     box-sizing: border-box;
   }
@@ -473,7 +473,7 @@ body {
   html,
   body {
     margin: 0 auto;
-    max-width: 540px;
+    max-width: 567px;
     min-width: 320px;
     overflow-x: hidden;
     width: 100%;
