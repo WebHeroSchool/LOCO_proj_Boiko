@@ -255,7 +255,7 @@ body {
   font-size: 15px;
   line-height: 21px;
   margin-bottom: 40px;
-  color: #000000;
+  color: #000;
   opacity: 0.5;
 }
 
@@ -280,7 +280,7 @@ body {
 .color-list__item-2 {
   width: 38px;
   height: 38px;
-  background: #F29F9F;
+  background: #f29f9f;
   border-radius: 50%;
   margin-right: 12px;
 }
