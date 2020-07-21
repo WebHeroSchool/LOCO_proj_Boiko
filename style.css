@@ -709,7 +709,7 @@ body {
   }
 
   .order-number {
-  	margin-right: 1.2vw;
+    margin-right: 1.2vw;
     width: 85px;
   }
 
@@ -779,8 +779,8 @@ body {
 
   .order-image__second {
     height: 90%;
-  	width: 95%;
-  	margin: 0;
+    width: 95%;
+    margin: 0;
   }
 
   .order-details {
@@ -843,7 +843,7 @@ body {
     margin-left: 1vw;
     margin-right: 5vw;
     padding-left: 2.1vw;
-    padding-top: 14px; 
+    padding-top: 14px;
     height: 50px;
     width: 120px;
   }
@@ -865,7 +865,7 @@ body {
 
   .range-1__link {
     font-size: 16px;
-  } 
+  }
 
   .range-2__link-arrow {
     width: 265px;
@@ -1195,7 +1195,7 @@ body {
   .range-1 {
     display: none;
   }
-  
+
   .order-images {
     background-image: url('./images/pinkbag-mob.svg');
     background-position: center;
