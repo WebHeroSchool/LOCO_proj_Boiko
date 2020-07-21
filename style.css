@@ -200,12 +200,15 @@ body {
 
 .order {
   background: #fae8e4;
+  display: flex;
+  padding-bottom: 28px;
   padding-left: 137px;
   width: 100%;
 }
 
 .order-images {
   display: flex;
+  margin-right: 89px;
   width: 50%;
 }
 
@@ -220,12 +223,19 @@ body {
   z-index: 2;
 }
 
+.order-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 168px;
+}
+
 .order-content {
   background: #fff;
-  margin-bottom: 30px;
-  padding-left: 37px;
-  padding-right: 50px;
-  padding-top: 35px;
+  margin-bottom: 36px;
+  padding-left: 57px;
+  padding-right: 61px;
+  padding-top: 43px;
   width: 488px;
 }
 
@@ -243,7 +253,7 @@ body {
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.07em;
-  margin-bottom: 50px;
+  margin-bottom: 61px;
   color: #000;
   opacity: 0.5;
   text-transform: uppercase;
@@ -254,7 +264,7 @@ body {
   font-weight: normal;
   font-size: 15px;
   line-height: 21px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   color: #000;
   opacity: 0.5;
 }
@@ -264,50 +274,49 @@ body {
   flex-direction: row;
   height: 38px;
   list-style-type: none;
-  margin-bottom: 35px;
-  transform: translateX(-37px);
+  margin-bottom: 53px;
+  margin-right: 13px;
+  transform: translateX(-39px);
 }
 
-.color-list__item-1 {
-  width: 30.18px;
-  height: 30px;
-  background: #dedede;
+.list__item {
   border-radius: 50%;
   margin-right: 12px;
+}
+
+.list__item_grey,
+.list__item_blue,
+.list__item_green {
+  width: 30.18px;
+  height: 30px;
   margin-top: 4px;
 }
 
-.color-list__item-2 {
+.list__item_grey {
+  background: #dedede;
+}
+
+.list__item_pink {
   width: 38px;
   height: 38px;
   background: #f29f9f;
-  border-radius: 50%;
-  margin-right: 12px;
 }
 
-.color-list__item-3 {
-  width: 30.18px;
-  height: 30px;
+.list__item_blue {
   background: #a8bff9;
-  border-radius: 50%;
-  margin-right: 12px;
-  margin-top: 4px;
 }
 
-.color-list__item-4 {
-  width: 30.18px;
-  height: 30px;
+.list__item_green {
   background: #90bd8f;
-  border-radius: 50%;
-  margin-top: 4px;
 }
 
-.order-price {
+.order__price {
   display: inline-block;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 56px;
+  transform: translateY(-5px);
 }
 
 .order-number {
@@ -316,7 +325,7 @@ body {
   width: 100px;
   height: 44px;
   margin-bottom: 30px;
-  margin-right: 35px;
+  margin-right: 10px;
   padding-left: 8px;
   padding-top: 10px;
 }
@@ -339,8 +348,7 @@ body {
 .number__input {
   background: transparent;
   border: none;
-  margin-bottom: 44px;
-  margin-right: 12px;
+  margin-right: 11px;
   width: 12px;
 }
 
@@ -352,8 +360,9 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
-  line-height: 0px;
+  margin-bottom: 45px;
   height: 44px;
+  padding-right: 11px;
   text-transform: uppercase;
   width: 253px;
 }
@@ -361,6 +370,7 @@ body {
 .range-1 {
   display: inline-block;
   position: relative;
+  transform: translateX(2px);
 }
 
 .range-1__link {
@@ -369,7 +379,7 @@ body {
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
-  margin-right: 15px;
+  margin-right: 10px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -453,6 +463,129 @@ body {
   .range__link {
     font-size: 12px;
   }
+
+  .order {
+    padding-left: 7vw;
+    width: 100%;
+  }
+
+  .order-images {
+    margin-right: 5vw;
+  }
+
+  .order-image__first {
+    height: 85%;
+    width: 80%;
+  }
+
+  .order-image__second {
+    height: 90%;
+    width: 85%;
+  }
+
+  .order-details {
+    padding-top: 6vw;
+  }
+
+  .order-content {
+    margin-bottom: 3vw;
+    padding-left: 3vw;
+    padding-right: 5vw;
+    padding-top: 3.5vw;
+    width: 430px;
+  }
+
+  .order__title {
+    font-size: 37px;
+    line-height: 38px;
+  }
+
+  .order__subtitle {
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 4vw;
+  }
+
+  .order__description {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 3vw;
+  }
+
+  .color-list {
+    height: 33px;
+    margin-bottom: 4.5vw;
+    margin-right: 1vw;
+  }
+
+  .list__item {
+    margin-right: 0.5vw;
+  }
+
+  .list__item_grey,
+  .list__item_blue,
+  .list__item_green {
+    width: 27.18px;
+    height: 27px;
+  }
+
+  .list__item_pink {
+    width: 33px;
+    height: 33px;
+  }
+
+  .order__price {
+    font-size: 37px;
+    line-height: 55px;
+    transform: translateY(1px);
+  }
+
+  .order-number {
+    width: 90px;
+    height: 40px;
+    margin-bottom: 2.8vw;
+    margin-right: 1vw;
+    padding-left: 8px;
+    padding-top: 10px;
+  }
+
+  .number__input,
+  .minus,
+  .plus {
+    font-size: 14px;
+  }
+
+  .minus {
+    margin-left: 0.5vw;
+    margin-right: 1.2vw;
+  }
+
+  .number__input {
+    margin-right: 0.7vw;
+  }
+
+  .order__cart {
+    font-size: 12px;
+    margin-bottom: 4vw;
+    height: 40px;
+    padding-right: 0.7vw;
+    transform: translateY(-2px);
+    width: 220px;
+  }
+
+  .range-1 {
+    transform: translateX(2px);
+  }
+
+  .range-1__link {
+    font-size: 12px;
+    line-height: 15px;
+    margin-right: 1vw;
+  }
+
+  .range-2__link-arrow {
+    width: 220px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -495,6 +628,109 @@ body {
   .scroll {
     display: none;
   }
+
+  .order {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 6vw;
+  }
+
+  .order-images {
+    margin-right: 2.5vw;
+  }
+
+  .order-image__first {
+    margin-top: 65px;
+    height: 50%;
+    width: 65%;
+  }
+
+  .order-image__second {
+    height: 85%;
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 0;
+  }
+
+  .order-details {
+    padding-top: 4vw;
+  }
+
+  .order-content {
+    margin-bottom: 3vw;
+    padding-left: 3vw;
+    padding-right: 4vw;
+    padding-top: 3.5vw;
+    width: 400px;
+  }
+
+  .order__title {
+    font-size: 34px;
+    line-height: 35px;
+  }
+
+  .order__subtitle {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 3.2vw;
+  }
+
+  .order__description {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 3vw;
+  }
+
+  .color-list {
+    height: 30px;
+    margin-bottom: 4.5vw;
+    margin-right: 1vw;
+  }
+
+  .list__item {
+    margin-right: 0.8vw;
+  }
+
+  .list__item_grey,
+  .list__item_blue,
+  .list__item_green {
+    width: 25.18px;
+    height: 25px;
+  }
+
+  .list__item_pink {
+    width: 30px;
+    height: 30px;
+  }
+
+  .order__price {
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  .order-number {
+  	margin-right: 1.2vw;
+    width: 85px;
+  }
+
+  .number__input,
+  .minus,
+  .plus {
+    font-size: 13px;
+  }
+
+  .minus {
+    margin-right: 1.3vw;
+  }
+
+  .order__cart {
+    margin-bottom: 3vw;
+    transform: translateY(-2px);
+  }
+
+  .range-2__link-arrow {
+    width: 180px;
+  }
 }
 
 @media (max-width: 880px) {
@@ -525,6 +761,114 @@ body {
 
   .range__link {
     font-size: 12px;
+  }
+
+  .order {
+    padding: 8vw 5vw 0 6.5vw;
+  }
+
+  .order-images {
+    margin-right: 7vw;
+  }
+
+  .order-image__first {
+    margin-top: 110px;
+    height: 55%;
+    width: 70%;
+  }
+
+  .order-image__second {
+    height: 90%;
+  	width: 95%;
+  	margin: 0;
+  }
+
+  .order-details {
+    padding-top: 11vw;
+  }
+
+  .order-content {
+    margin-bottom: 5vw;
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+    padding-top: 6vw;
+    width: 550px;
+  }
+
+  .order__title {
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  .order__subtitle {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 3.5vw;
+  }
+
+  .order__description {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 5vw;
+  }
+
+  .color-list {
+    height: 38px;
+    margin-bottom: 5vw;
+    margin-right: 10vw;
+  }
+
+  .list__item {
+    margin-right: 1.4vw;
+  }
+
+  .list__item_grey,
+  .list__item_blue,
+  .list__item_green {
+    width: 33.18px;
+    height: 33px;
+  }
+
+  .list__item_pink {
+    width: 38px;
+    height: 38px;
+  }
+
+  .order__price {
+    font-size: 38px;
+    line-height: 52px;
+  }
+
+  .order-number {
+    margin-left: 1vw;
+    margin-right: 5vw;
+    padding-left: 2.1vw;
+    padding-top: 14px; 
+    height: 50px;
+    width: 120px;
+  }
+
+  .number__input,
+  .minus,
+  .plus {
+    font-size: 17px;
+    margin-right: 2.1vw;
+  }
+
+  .order__cart {
+    font-size: 17px;
+    margin-bottom: 3.8vw;
+    transform: translateY(-1px);
+    height: 50px;
+    width: 280px;
+  }
+
+  .range-1__link {
+    font-size: 16px;
+  } 
+
+  .range-2__link-arrow {
+    width: 265px;
   }
 }
 
@@ -638,6 +982,90 @@ body {
     margin-left: 40%;
     margin-top: 9%;
     transform: rotate(135deg);
+  }
+
+  .order {
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+
+  .order-image__first,
+  .order-image__second,
+  .order-number,
+  .range-1 {
+    display: none;
+  }
+
+  .order-images {
+    background-image: url('./images/pinkbag-mob.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85vw 70vw;
+    margin-bottom: 2.5vw;
+    min-height: 370px;
+    width: 100%;
+  }
+
+  .order-content {
+    padding-left: 4.5vw;
+    padding-right: 4.8vw;
+    padding-top: 22px;
+    width: 480px;
+  }
+
+  .order__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .order__subtitle {
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 4vw;
+    margin-top: 8px;
+  }
+
+  .order__description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .color-list {
+    height: 33px;
+    margin-bottom: 5vw;
+    margin-left: 1vw;
+    margin-right: 12vw;
+  }
+
+  .list__item {
+    margin-right: 1.2vw;
+  }
+
+  .list__item_pink {
+    height: 33px;
+    width: 33px;
+  }
+
+  .list__item_grey,
+  .list__item_blue,
+  .list__item_green {
+    height: 28px;
+    width: 28.35px;
+  }
+
+  .order__price {
+    font-size: 28px;
+    line-height: 33px;
+    margin-left: 3vw;
+  }
+
+  .order__cart {
+    font-size: 14px;
+    height: 42px;
+    margin-bottom: 4vw;
+    padding-left: 15px;
+    width: 420px;
   }
 }
 
@@ -755,6 +1183,99 @@ body {
     margin-top: 116px;
     transform: rotate(135deg);
   }
+
+  .order {
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+
+  .order-image__first,
+  .order-image__second,
+  .order-number,
+  .range-1 {
+    display: none;
+  }
+  
+  .order-images {
+    background-image: url('./images/pinkbag-mob.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 240px;
+    transform: translateY(-41px);
+    width: 100%;
+  }
+
+  .order-details {
+    padding-left: 29px;
+    padding-right: 27px;
+    padding-top: 0;
+    transform: translateX(-7px);
+    transform: translateY(-8px);
+  }
+
+  .order-content {
+    padding-left: 26px;
+    padding-right: 34px;
+    padding-top: 17px;
+    width: 320px;
+  }
+
+  .order__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .order__subtitle {
+    font-size: 10px;
+    line-height: 10px;
+    margin-top: 5px;
+    transform: translateX(2px);
+  }
+
+  .order__description {
+    font-size: 9px;
+    line-height: 13px;
+    margin: 0;
+    transform: translateX(2px);
+  }
+
+  .color-list {
+    margin-bottom: 22px;
+    margin-left: 4px;
+    margin-right: 10px;
+  }
+
+  .list__item {
+    margin-right: 9px;
+  }
+
+  .list__item_pink {
+    height: 29px;
+    width: 29.39px;
+  }
+
+  .list__item_grey,
+  .list__item_blue,
+  .list__item_green {
+    height: 23px;
+    width: 23.35px;
+  }
+
+  .order__price {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  .order__cart {
+    font-size: 13px;
+    line-height: 0px;
+    height: 37px;
+    margin-bottom: 25px;
+    padding-left: 13px;
+    transform: translateX(2px);
+    width: 260px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -792,6 +1313,59 @@ body {
     margin-left: 40%;
     margin-top: 27%;
     transform: rotate(135deg);
+  }
+
+  .order-details {
+    padding-right: 29px;
+  }
+
+  .order-content {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 280px;
+  }
+
+  .order__title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .order__subtitle {
+    margin-top: 5px;
+  }
+
+  .color-list {
+    margin-bottom: 28px;
+    margin-right: 0;
+  }
+
+  .list__item {
+    margin-right: 6px;
+  }
+
+  .list__item_pink {
+    height: 26px;
+    width: 26px;
+  }
+
+  .list__item_grey,
+  .list__item_blue,
+  .list__item_green {
+    height: 20px;
+    width: 20.35px;
+  }
+
+  .order__price {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0;
+  }
+
+  .order__cart {
+    height: 35px;
+    margin-bottom: 22px;
+    padding-left: 11px;
+    width: 225px;
   }
 }
 
