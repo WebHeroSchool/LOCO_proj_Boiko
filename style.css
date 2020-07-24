@@ -387,10 +387,7 @@ body {
 .outfit {
   background: linear-gradient(to right, #ebe3d8 27%, #000 27% 32%, #ebe3d8 32%);
   display: flex;
-  padding-bottom: 140px;
-  padding-left: 88px;
-  padding-right: 148px;
-  padding-top: 139px;
+  padding: 139px 148px 140px 88px;
   width: 100%;
 }
 
@@ -407,7 +404,7 @@ body {
 }
 
 .outfit-content {
-  background-color: #FAE8E4;
+  background-color: #fae8e4;
   margin-bottom: 35px;
   padding: 5px 53px 16px 47px;
   transform: translateX(-98px);
@@ -448,8 +445,8 @@ body {
   height: 44px;
   width: 253px;
   background: transparent;
-  border: 1.5px solid #000000;
-  font-family: Montserrat;
+  border: 1.5px solid #000;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
