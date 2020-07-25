@@ -477,7 +477,7 @@ body {
   text-transform: uppercase;
 }
 
-  /*АНИМАЦИЯ ДЛЯ КНОПОК И ССЫЛОК*/
+/* АНИМАЦИЯ ДЛЯ КНОПОК И ССЫЛОК */
 
 .header__logo:hover,
 .language__img:hover,
@@ -489,7 +489,7 @@ body {
 .order-number:hover,
 .order__cart:hover,
 .range-1:hover,
-.outfit__cart:hover, 
+.outfit__cart:hover,
 .range-2:hover {
   background: #ed65f0f3;
   color: #f7f24ff3;
@@ -577,7 +577,7 @@ body {
   }
 
   .order {
-  	padding-bottom: 7vw;
+    padding-bottom: 7vw;
     padding-left: 7vw;
     padding-right: 3.5vw;
     width: 100%;
@@ -803,10 +803,7 @@ body {
   }
 
   .order {
-    padding-bottom: 2.5vw;
-    padding-left: 6.5vw;
-    padding-right: 4.5vw;
-    padding-top: 6vw;
+    padding: 6vw 4.5vw 2.5vw 6.5vw;
   }
 
   .order-images {
@@ -1623,7 +1620,7 @@ body {
   }
 
   .outfit {
-  	background: linear-gradient(to right, #ebe3d8 27.5%, #000 27.5% 38.5%, #ebe3d8 38.5%);
+    background: linear-gradient(to right, #ebe3d8 27.5%, #000 27.5% 38.5%, #ebe3d8 38.5%);
     flex-direction: column;
     padding-left: 11px;
     padding-top: 34px;
@@ -1668,7 +1665,7 @@ body {
   }
 
   .outfit__cart {
-    border: 1px solid #000000;
+    border: 1px solid #000;
     font-size: 13px;
     line-height: 0px;
     height: 37px;
